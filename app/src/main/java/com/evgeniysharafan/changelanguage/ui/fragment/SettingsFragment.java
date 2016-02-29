@@ -38,6 +38,9 @@ public class SettingsFragment extends PreferenceFragment implements OnPreference
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
 
+        // When system restores PreferenceFragment it sets the default language instead of the current one
+        // even despite LocaleUtils.updateAndGetConfiguration(); in SettingsActivity's onCreate method.
+        // That's why we need to call it here.
         if (savedInstanceState != null) {
             getActivity().onConfigurationChanged(LocaleUtils.updateAndGetConfiguration());
         }
@@ -47,15 +50,6 @@ public class SettingsFragment extends PreferenceFragment implements OnPreference
         fillSummaries();
 
         return view;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        prepareActionBar();
-        findPreferences();
-        fillSummaries();
     }
 
     private void prepareActionBar() {

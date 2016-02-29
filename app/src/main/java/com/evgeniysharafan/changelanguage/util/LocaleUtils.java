@@ -19,10 +19,14 @@ public class LocaleUtils {
     private static final String RUSSIAN = Res.getString(R.string.language_russian);
     private static final String RUSSIAN_LANGUAGE_CODE = "ru";
 
-
     private LocaleUtils() {
     }
 
+    /**
+     * Gets the current language from settings, sets it as default locale, updates configuration in resources,
+     * returns resulting configuration for onConfigurationChanged(Configuration newConfig) method.
+     * e.g. onConfigurationChanged(LocaleUtils.updateAndGetConfiguration());
+     */
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public static Configuration updateAndGetConfiguration() {
         Configuration configuration = new Configuration(Res.get().getConfiguration());
@@ -46,14 +50,23 @@ public class LocaleUtils {
         return configuration;
     }
 
+    /**
+     * @param language name from settings. English, Spanish, etc.
+     */
     public static boolean isCurrentLanguage(@NonNull String language) {
         return isCurrentLanguageCode(getLanguageCode(language));
     }
 
+    /**
+     * @param languageCode en, es, etc. e.g Locale.ENGLISH.getLanguage();
+     */
     public static boolean isCurrentLanguageCode(@NonNull String languageCode) {
         return Res.get().getConfiguration().locale.getLanguage().equals(languageCode);
     }
 
+    /**
+     * Transforms language (English) to language code (en)
+     */
     private static String getLanguageCode(@NonNull String language) {
         if (ENGLISH.equals(language)) {
             return ENGLISH_LANGUAGE_CODE;

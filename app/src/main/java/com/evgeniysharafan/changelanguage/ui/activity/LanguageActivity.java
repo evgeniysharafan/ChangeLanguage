@@ -24,6 +24,7 @@ public class LanguageActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        // when we return from the settings activity we need to check whether the current language has been changed
         if (!LocaleUtils.isCurrentLanguageCode(currentLanguageCode)) {
             onConfigurationChanged(LocaleUtils.updateAndGetConfiguration());
         }
