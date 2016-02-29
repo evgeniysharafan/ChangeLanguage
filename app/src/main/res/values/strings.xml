@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChangeLanguage</string>
+
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="fragment_first">First</string>
+    <string name="fragment_second">Second</string>
+
+    <!--Actions-->
+    <string name="action_search">Search</string>
+    <string name="action_accounts">Accounts</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Permissions-->
+    <string name="action_enable">ENABLE</string>
+
+    <!--Settings-->
+    <string name="key_change_me" translatable="false">key_change_me</string>
+    <string name="title_change_me">Change</string>
+    <string name="summary_change_me">Change me</string>
+
+    <string name="key_language" translatable="false">key_language</string>
+    <string name="title_language">Language</string>
+    <string-array name="entries_language">
+        <item>@string/language_english</item>
+        <item>@string/language_russian</item>
+    </string-array>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_russian" translatable="false">Русский</string>
+    <string name="default_language" translatable="false">@string/language_english</string>
+
+</resources>

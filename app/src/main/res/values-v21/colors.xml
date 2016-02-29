@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="control_highlight">@color/primary_300</color>
+    <color name="control_highlight_selected">@color/primary_400</color>
+
+</resources>

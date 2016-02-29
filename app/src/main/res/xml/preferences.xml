@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/key_change_me"
+        android:summary="@string/summary_change_me"
+        android:title="@string/title_change_me" />
+
+    <ListPreference
+        android:defaultValue="@string/default_language"
+        android:entries="@array/entries_language"
+        android:entryValues="@array/entries_language"
+        android:key="@string/key_language"
+        android:title="@string/title_language" />
+</PreferenceScreen>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--bg-->
+    <color name="window_bg">#FFFFFF</color>
+
+    <!--palette-->
+    <color name="primary_50">#E3F2FD</color>
+    <color name="primary_100">#BBDEFB</color>
+    <color name="primary_200">#90CAF9</color>
+    <color name="primary_300">#64B5F6</color>
+    <color name="primary_400">#42A5F5</color>
+    <color name="primary_500">#2196F3</color>
+    <color name="primary_600">#1E88E5</color>
+    <color name="primary_700">#1976D2</color>
+    <color name="primary_800">#1565C0</color>
+    <color name="primary_900">#0D47A1</color>
+    <color name="accent_100">#F4FF81</color>
+    <color name="accent_200">#EEFF41</color>
+    <color name="accent_400">#C6FF00</color>
+    <color name="accent_700">#AEEA00</color>
+
+    <color name="primary">@color/primary_500</color>
+    <color name="primary_dark">@color/primary_700</color>
+    <color name="accent">@color/primary_500</color>
+    <color name="control_highlight">@color/primary_200</color>
+    <color name="control_highlight_selected">@color/primary_300</color>
+    <color name="toolbar_control_normal">@color/window_bg</color>
+    <color name="toolbar_control_activated">@color/window_bg</color>
+
+    <!--text-->
+    <color name="black_primary_text">#DE000000</color>
+    <color name="black_secondary_text">#8A000000</color>
+    <color name="black_icons">@color/black_secondary_text</color>
+    <color name="black_disabled_text">#42000000</color>
+    <color name="black_hint_text">@color/black_disabled_text</color>
+    <color name="black_divider">#1F000000</color>
+    <color name="white_primary_text">#FFFFFF</color>
+    <color name="white_icons">@color/white_primary_text</color>
+    <color name="white_secondary_text">#B2FFFFFF</color>
+    <color name="white_disabled_text">#4DFFFFFF</color>
+    <color name="white_hint_text">@color/white_disabled_text</color>
+    <color name="white_divider">#1FFFFFFF</color>
+
+    <!--other-->
+
+</resources>

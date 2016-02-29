@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Text">
+        <item name="android:textColor">@color/black_primary_text</item>
+        <item name="android:textSize">@dimen/text_body_regular</item>
+        <item name="android:textDirection" tools:ignore="NewApi">anyRtl</item>
+    </style>
+
+    <style name="Button" parent="Button.Base">
+        <item name="colorButtonNormal">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary_700</item>
+    </style>
+
+    <style name="Button.Base" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_body_medium</item>
+        <item name="android:textColor">@color/white_primary_text</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

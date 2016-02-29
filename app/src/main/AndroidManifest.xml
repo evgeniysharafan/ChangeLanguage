@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.evgeniysharafan.changelanguage">
+
+    <application
+        android:name=".util.App"
+        android:allowBackup="${allowBackup}"
+        android:fullBackupContent="${fullBackupContent}"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.activity.ChatsActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.SettingsActivity" />
+
+    </application>
+
+</manifest>

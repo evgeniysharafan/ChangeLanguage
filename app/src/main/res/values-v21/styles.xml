@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Button" parent="Button.Base">
+        <item name="android:colorButtonNormal">@color/primary</item>
+        <item name="android:colorControlHighlight">@color/primary_700</item>
+    </style>
+</resources>

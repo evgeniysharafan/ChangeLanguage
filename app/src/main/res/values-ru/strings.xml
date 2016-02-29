@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ИзменитьЯзык</string>
+
+    <string name="drawer_close">Закрыть</string>
+    <string name="drawer_open">Открыть</string>
+    <string name="fragment_first">Первый</string>
+    <string name="fragment_second">Второй</string>
+
+    <!--Actions-->
+    <string name="action_search">Поиск</string>
+    <string name="action_accounts">Учётные записи</string>
+    <string name="action_settings">Настройки</string>
+
+    <!--Permissions-->
+    <string name="action_enable">ВКЛЮЧИТЬ</string>
+
+    <!--Settings-->
+    <string name="title_change_me">Измени</string>
+    <string name="summary_change_me">Измени меня</string>
+    <string name="title_language">Язык</string>
+
+</resources>
