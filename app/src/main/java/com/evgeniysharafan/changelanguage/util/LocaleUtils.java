@@ -29,7 +29,7 @@ public class LocaleUtils {
      */
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public static Configuration updateAndGetConfiguration() {
-        Configuration configuration = new Configuration(Res.get().getConfiguration());
+        Configuration configuration = new Configuration(Res.getConfiguration());
         String language = Prefs.getLanguage();
 
         if (ENGLISH.equals(language)) {
@@ -45,7 +45,7 @@ public class LocaleUtils {
         }
 
         Locale.setDefault(configuration.locale);
-        Res.get().updateConfiguration(configuration, Res.getDisplayMetrics());
+        Res.updateConfiguration(configuration);
 
         return configuration;
     }
@@ -61,7 +61,7 @@ public class LocaleUtils {
      * @param languageCode en, es, etc. e.g Locale.ENGLISH.getLanguage();
      */
     public static boolean isCurrentLanguageCode(@NonNull String languageCode) {
-        return Res.get().getConfiguration().locale.getLanguage().equals(languageCode);
+        return Res.getConfiguration().locale.getLanguage().equals(languageCode);
     }
 
     /**
